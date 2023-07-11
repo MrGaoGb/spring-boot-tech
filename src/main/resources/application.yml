@@ -1,0 +1,26 @@
+server:
+  port: 8888
+  tomcat:
+    accept-count: 10 # 最大等待数
+    max-connections: 30 # 最大连接数
+    max-threads: 20 # 最大线程数
+    min-spare-threads: 10 # 最少线程数
+
+
+# rabbit MQ
+businessQueue:
+  noActiveQueueName: biz-active-queue
+  noActiveExchangeName: biz-active-exchange
+  noActiveRoutingKey: biz-active-routing-key
+dlQueue:
+  dlQueueName: biz-dl-queue
+  dlExchangeName: biz-dl-exchange
+  dlRoutingKey: biz-dl-routing-key
+
+# rabbit connect config
+#spring.rabbitmq.host=192.168.1.151
+#spring.rabbitmq.port=5672
+#spring.rabbitmq.username=admin
+#spring.rabbitmq.password=admin
+#spring.rabbitmq.publisher-returns=true
+#spring.rabbitmq.publisher-confirm-type=correlated

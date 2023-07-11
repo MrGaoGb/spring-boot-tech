@@ -26,34 +26,34 @@ public class RabbitMQConfig {
     /**
      * 业务队列-名称
      */
-    @Value("${mq.queueBinding.bussinessQueue.noActiveQueueName}")
+    @Value("${businessQueue.noActiveQueueName}")
     private String bisQueueName;
     /**
      * 业务队列-交换机名称
      */
-    @Value("${mq.queueBinding.bussinessQueue.noActiveExchangeName}")
+    @Value("${businessQueue.noActiveExchangeName}")
     private String bisExchangeName;
     /**
      * 业务队列-路由键
      */
-    @Value("${mq.queueBinding.bussinessQueue.noActiveRoutingKey}")
+    @Value("${businessQueue.noActiveRoutingKey}")
     private String bisNoActiveRoutingKey;
 
 
     /**
      * 死信队列-名称
      */
-    @Value("${mq.queueBinding.dlQueue.dlQueueName}")
+    @Value("${dlQueue.dlQueueName}")
     private String dlQueueName;
     /**
      * 死信队列-交换机名称
      */
-    @Value("${mq.queueBinding.dlQueue.dlExchangeName}")
+    @Value("${dlQueue.dlExchangeName}")
     private String dlExchangeName;
     /**
      * 死信队列-路由键
      */
-    @Value("${mq.queueBinding.dlQueue.dlRoutingKey}")
+    @Value("${dlQueue.dlRoutingKey}")
     private String dlRoutingKey;
 
     /**
